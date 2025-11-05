@@ -1,13 +1,12 @@
 # These and other macros are documented in dhd/droid-hal-device.inc
 # Feel free to cleanup this file by removing comments, once you have memorised them ;)
 
-%define device miatoll
+%define device fog
 %define vendor xiaomi
 
 %define vendor_pretty Xiaomi
-%define device_pretty Redmi Note 9 Pro
-
-%define rpm_device miatoll
+%define device_pretty Redmi 10C
+%define rpm_device fog
 
 %define enable_kernel_update 1
 %define enable_dtbo_update 1
