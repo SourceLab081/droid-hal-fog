@@ -33,8 +33,4 @@
 %define makefstab_skip_entries /product /system /system_ext /vendor /odm
 Requires: droid-system
 
-# Custom Firmware mount
-Requires: custom_firmware
-%define makefstab_skip_entries /vendor/bt_firmware /vendor/dsp /vendor/firmware_mnt
-
 %include rpm/dhd/droid-hal-device.inc
