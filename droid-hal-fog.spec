@@ -6,10 +6,7 @@
 
 %define droid_target_aarch64 1
 
-
 %define rpm_vendor qualcomm
-
-%define dhd_path dhd
 
 %define installable_zip 1
 
