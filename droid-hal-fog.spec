@@ -32,7 +32,7 @@
 
 # Using droid-system instead of mounting
 %define makefstab_skip_entries /product /system /system_ext /vendor /metadata
-Requires: droid-system
+
 
 %include rpm/dhd/droid-hal-device.inc
 
