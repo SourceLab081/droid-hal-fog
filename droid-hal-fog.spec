@@ -1,12 +1,15 @@
 # These and other macros are documented in dhd/droid-hal-device.inc
 # Feel free to cleanup this file by removing comments, once you have memorised them ;)
 
-%define device vayu
+%define device fog
 %define vendor xiaomi
 %define vendor_pretty Xiaomi
-%define device_pretty Poco X3 Pro
-%define rpm_device vayu
+%define device_pretty Redmi 10C
+%define rpm_device fog
 %define installable_zip 1
+
+%define enable_kernel_update 1
+%define enable_dtbo_update 1
 
 %define droid_target_aarch64 1
 
