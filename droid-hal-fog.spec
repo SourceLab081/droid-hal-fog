@@ -18,18 +18,23 @@
 #define some_macro "I'll not be defined because I don't have % in front"
 
 # want adreno quirks is required for browser at least, and other subtle issues
+# want adreno quirks is required for browser at least, and other subtle issues
 %define android_config \
 #define WANT_ADRENO_QUIRKS 1\
 %{nil}
 
 %define straggler_files \
-   /bugreports \
-   /cache \
-   /d \
-   /sdcard \
+  /acct \
+  /bugreports \
+  /cache \
+  /d \
+  /oem \
+  /sdcard \
+  /storage \
 %{nil}
 
+
 # On Android 8 the system partition is (intended to be) mounted on /.
-%define makefstab_skip_entries /metadata /odm /product /system /system_ext /vendor 
+%define makefstab_skip_entries / /odm /product /system /system_ext /vendor
 
 %include rpm/dhd/droid-hal-device.inc
